@@ -21,13 +21,19 @@
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp">
 
+        <TextView
+            android:id="@+id/required_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:text="@string/required_string"/>
+
         <EditText
             android:id="@+id/email_edit_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
             android:hint="@string/email"
+            android:layout_below="@+id/required_textview"
             android:inputType="textEmailAddress"
             android:labelFor="@id/email_edit_textview" />
 
@@ -60,9 +66,18 @@
             android:labelFor="@id/industry_edit_textview"
             android:hint="@string/industry_type" />
 
+        <TextView
+            android:id="@+id/opional_textview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/industry_edit_textview"
+            android:paddingTop="10dp"
+            android:textSize="14sp"
+            android:text="@string/optional_string"/>
+
         <LinearLayout
             android:id="@+id/optional_layout"
-            android:layout_below="@id/industry_edit_textview"
+            android:layout_below="@id/opional_textview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal">
@@ -71,9 +86,11 @@
                 android:id="@+id/company_edit_textview"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
+                android:layout_above="@+id/signup_button"
+                android:layout_alignParentStart="true"
                 android:layout_weight="1"
-                android:inputType="text"
-                android:hint="@string/company_name" />
+                android:hint="@string/company_name"
+                android:inputType="text" />
 
             <EditText
                 android:id="@+id/phone_edit_textview"
@@ -92,6 +109,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/sign_up"/>
+
 
     </RelativeLayout>
 

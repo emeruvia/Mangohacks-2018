@@ -21,7 +21,9 @@
     <string name="password">password</string>
     <string name="person_name">name</string>
     <string name="industry_type">Industry type</string>
-    <string name="phone_number">phone</string>
-    <string name="company_name">company</string>
+    <string name="phone_number">Phone</string>
+    <string name="company_name">Company</string>
     <string name="sign_up">Sign Up</string>
+    <string name="optional_string">Optional:</string>
+    <string name="required_string">Required:</string>
 </resources>

@@ -30,7 +30,7 @@
         android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+android:onClick="testingClick"
         android:layout_alignBaseline="@+id/login"
         android:layout_alignBottom="@+id/login"
         android:layout_marginEnd="68dp"

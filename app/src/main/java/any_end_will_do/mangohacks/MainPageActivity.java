@@ -7,13 +7,13 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
-import android.widget.Toolbar;
+
 
 public class MainPageActivity extends AppCompatActivity {
 
     private TextView mTextMessage;
 
-    private Toolbar toolbar;
+    private android.support.v7.widget.Toolbar  toolbar;
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -32,6 +32,7 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.title_profile);
+                    return true;
             }
             return false;
         }
@@ -70,8 +71,7 @@ public class MainPageActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
-        toolbar = (Toolbar) findViewById(R.id.toolbar) ;
-//        setSupportActionBar(toolbar);
+        toolbar = findViewById(R.id.toolbar) ;
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

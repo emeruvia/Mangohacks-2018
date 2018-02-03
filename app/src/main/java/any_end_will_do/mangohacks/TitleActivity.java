@@ -5,6 +5,8 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import any_end_will_do.mangohacks.dataObjects.BusinessPost;
+
 public class TitleActivity extends AppCompatActivity {
         static BusinessPost businessPosts;
     @Override

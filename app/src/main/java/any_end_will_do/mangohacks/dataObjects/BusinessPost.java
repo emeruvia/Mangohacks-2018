@@ -1,4 +1,4 @@
-package any_end_will_do.mangohacks;
+package any_end_will_do.mangohacks.dataObjects;
 
 import android.media.Image;
 import android.widget.Button;

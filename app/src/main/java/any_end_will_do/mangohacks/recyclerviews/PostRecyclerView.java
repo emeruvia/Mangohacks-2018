@@ -11,8 +11,7 @@ import android.widget.TextView;
 
 import java.util.List;
 
-import any_end_will_do.mangohacks.BusinessPost;
-import any_end_will_do.mangohacks.BusinessPostManager;
+import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.R;
 
 public class PostRecyclerView extends RecyclerView.Adapter<PostRecyclerView.BusinessPostAdapterViewHolder> {

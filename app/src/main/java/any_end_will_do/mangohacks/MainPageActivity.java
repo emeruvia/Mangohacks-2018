@@ -84,4 +84,6 @@ public class MainPageActivity extends AppCompatActivity {
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
+
+
 }

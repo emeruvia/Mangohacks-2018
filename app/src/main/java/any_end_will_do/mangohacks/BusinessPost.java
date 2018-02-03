@@ -1,5 +1,6 @@
 package any_end_will_do.mangohacks;
 
+import android.media.Image;
 import android.widget.Button;
 import android.widget.ImageView;
 
@@ -8,21 +9,31 @@ import android.widget.ImageView;
  */
 
 public class BusinessPost {
+
     private String postCaption;
-    private ImageView postImage;
-    public BusinessPost(String postCaption, ImageView postImage, Button likeButton, Button commentButton, Button shareButton, Button profileButton){
+    private String postUser;
+    private int postImageResource;
+
+    //Class constructor
+    public BusinessPost(String postCaption, String postUser, int postImageResource, Button likeButton,
+                        Button commentButton, Button shareButton, Button profileButton){
         this.postCaption = postCaption;
-        this.postImage = postImage;
+        this.postUser = postUser;
+        this.postImageResource = postImageResource;
     }
 
+    //getters
     public String getPostCaption() {
         return postCaption;
     }
 
-
-    public ImageView getPostImage() {
-
-        return postImage;
+    public String getPostUser() {
+        return postUser;
     }
+
+    public int getPostImage() {
+        return postImageResource;
+    }
+
 
 }

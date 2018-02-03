@@ -1,1 +1,3 @@
-# Mangohacks-2018 #Project This is a project placeholder
+# Mangohacks-2018 
+## Project
+This is a project placeholder

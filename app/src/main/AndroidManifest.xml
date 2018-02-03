@@ -28,7 +28,7 @@
         <activity
             android:name=".MainPageActivity"
             android:label="@string/title_activity_main2" />
-        <activity android:name=".BusinessPostAdapter"></activity>
+        <activity android:name=".recyclerviews.PostRecyclerView"></activity>
     </application>
 
 </manifest>

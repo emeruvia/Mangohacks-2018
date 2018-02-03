@@ -26,6 +26,10 @@ public class BusinessPostAdapter extends RecyclerView.Adapter<BusinessPostAdapte
 
     @Override
     public void onBindViewHolder(BusinessPostAdapter.BusinessPostAdapterViewHolder holder, int position) {
+                String caption = BusinessPostManager.posts.get(position).getPostCaption();
+                ImageView postImage = BusinessPostManager.posts.get(position).getPostImage();
+                holder.i1.setImageDrawable(postImage.getDrawable());
+                holder.t1.setText(caption);
 
     }
 
@@ -34,10 +38,10 @@ public class BusinessPostAdapter extends RecyclerView.Adapter<BusinessPostAdapte
         return 0;
     }
     public class BusinessPostAdapterViewHolder extends RecyclerView.ViewHolder {
-        public final Button b1;
-        public final Button b2;
-        public final Button b3;
-        public final Button b4;
+        public final Button likeButton;
+        public final Button shareProfile;
+        public final Button profileButton;
+        public final Button commentButton;
         public final TextView t1;
         public final ImageView i1;
 
@@ -46,12 +50,37 @@ public class BusinessPostAdapter extends RecyclerView.Adapter<BusinessPostAdapte
         public BusinessPostAdapterViewHolder(View view) {
             super(view);
 
-            b1 = (Button)view.findViewById(R.id.like_button);
-            b2 = (Button)view.findViewById(R.id.share_post_button);
-            b3 = (Button)view.findViewById(R.id.view_profile_button);
-            b4 = (Button)view.findViewById(R.id.comment_button);
+            likeButton = (Button)view.findViewById(R.id.like_button);
+            shareProfile = (Button)view.findViewById(R.id.share_post_button);
+            profileButton = (Button)view.findViewById(R.id.view_profile_button);
+            commentButton = (Button)view.findViewById(R.id.comment_button);
             t1 = view.findViewById(R.id.company_caption);
             i1 = view.findViewById(R.id.post_image);
+            commentButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //TODO Make intent to open the post in order to a
+                }
+            });
+
+            likeButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //TODO increment like value in person's profile
+                }
+            });
+            profileButton.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //TODO Make intent to show the profile who made the post
+                }
+            });
+            shareProfile.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    //TODO Make a pop-up that will share the post with people
+                }
+            });
 
 
 

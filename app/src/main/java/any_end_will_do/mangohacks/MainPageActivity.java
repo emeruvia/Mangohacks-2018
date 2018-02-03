@@ -18,6 +18,7 @@ public class MainPageActivity extends AppCompatActivity {
 
     private android.support.v7.widget.Toolbar  toolbar;
 
+
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
@@ -75,7 +76,7 @@ public class MainPageActivity extends AppCompatActivity {
         toolbar.setTitle(R.string.toolbar_title);
         setSupportActionBar(toolbar);
         businessPost = findViewById(R.id.bussiness_posts);
-        businessPost.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
+        businessPost.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false));
         businessPost.setHasFixedSize(true);
 
         mTextMessage = (TextView) findViewById(R.id.message);

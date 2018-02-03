@@ -7,18 +7,7 @@
     tools:context="any_end_will_do.mangohacks.TitleActivity"
     android:background="@drawable/homescreen_backgroundimage"
     >
-
-<!--<TextView
-    android:id="@+id/title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="157dp"
-    android:text="MBP"
-    android:fontFamily="sans-serif"
-    android:textColor="#353535"
-    android:textSize="48sp" />-->
+    
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

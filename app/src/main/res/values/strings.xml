@@ -39,6 +39,6 @@
     <!--Home cardview-->
     <string name="caption_cardview">caption</string>
     <string name="user_company">user/company</string>
-
+    <string name="email_string">This is the email string...</string>
 
 </resources>

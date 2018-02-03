@@ -3,6 +3,7 @@ package any_end_will_do.mangohacks;
 import java.util.ArrayList;
 import java.util.List;
 
+import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.recyclerviews.PostRecyclerView;
 
 /**

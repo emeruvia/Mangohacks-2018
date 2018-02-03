@@ -42,4 +42,8 @@
     <string name="email_string">This is the email string...</string>
     <string name="title_activity_business_post_adapter">BusinessPostAdapter</string>
 
+    <!--Profile strings-->
+    <string name="user_name">Name: </string>
+    <string name="user_address">Addres: </string>
+
 </resources>

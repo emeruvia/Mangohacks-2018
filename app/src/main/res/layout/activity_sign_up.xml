@@ -12,7 +12,9 @@
         android:id="@+id/logo_imageview"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/ic_launcher_background"/>
+        android:src="@drawable/homepagelogo"
+        android:scaleX=".5"
+        android:scaleY=".5"/>
 
     <RelativeLayout
         android:layout_below="@id/logo_imageview"

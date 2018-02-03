@@ -4,25 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="any_end_will_do.mangohacks.TitleActivity">
-
-<!--<TextView
-    android:id="@+id/title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="157dp"
-    android:text="MBP"
-    android:fontFamily="sans-serif"
-    android:textColor="#353535"
-    android:textSize="48sp" />-->
+    tools:context="any_end_will_do.mangohacks.TitleActivity"
+    android:background="@drawable/homescreen_backgroundimage"
+    >
+    
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
-        android:paddingTop="30dp"
-        android:src="@drawable/homepagelogo"/>
+        android:scaleX=".5"
+        android:scaleY=".5"
+        android:src="@drawable/homepagelogo"
+        />
 
     <Button
         android:id="@+id/login"
@@ -31,8 +24,8 @@
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
         android:layout_marginBottom="120dp"
-        android:layout_marginEnd="70dp"
-        android:background="@null"
+        android:layout_marginRight="80dp"
+        android:background="#F5F5F5"
         android:text="login" />
 
     <Button
@@ -40,11 +33,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:onClick="testingClick"
-        android:layout_alignBaseline="@+id/login"
         android:layout_alignBottom="@+id/login"
-        android:layout_marginEnd="68dp"
-        android:layout_toStartOf="@+id/login"
-        android:background="@null"
+        android:layout_marginLeft="80dp"
+        android:background="#F5F5F5"
         android:text="sign-up" />
 
 

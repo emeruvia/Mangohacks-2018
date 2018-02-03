@@ -24,4 +24,9 @@
     <string name="phone_number">phone</string>
     <string name="company_name">company</string>
     <string name="sign_up">Sign Up</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_mail">Mail</string>
+    <string name="title_profile">Profile</string>
 </resources>

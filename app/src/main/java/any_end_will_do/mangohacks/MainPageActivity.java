@@ -71,7 +71,7 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
         toolbar = (Toolbar) findViewById(R.id.toolbar) ;
-        setSupportActionBar(toolbar);
+//        setSupportActionBar(toolbar);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

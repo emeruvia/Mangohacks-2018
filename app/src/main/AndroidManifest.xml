@@ -27,7 +27,8 @@
         <activity android:name=".SignUpActivity" />
         <activity
             android:name=".MainPageActivity"
-            android:label="@string/title_activity_main2"></activity>
+            android:label="@string/title_activity_main2" />
+        <activity android:name=".BusinessPostAdapter"></activity>
     </application>
 
 </manifest>

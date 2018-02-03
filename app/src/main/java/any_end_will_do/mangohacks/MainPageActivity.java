@@ -56,9 +56,6 @@ public class MainPageActivity extends AppCompatActivity {
         switch(item.getItemId()){
             case R.id.toolbar_search:
                 return true;
-            case R.id.toolbar_title:
-                mTextMessage.setText(R.string.toolbar_title);
-                return true;
 
         }
 
@@ -72,6 +69,8 @@ public class MainPageActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_page);
         toolbar = findViewById(R.id.toolbar) ;
+        toolbar.setTitle(R.string.toolbar_title);
+        setSupportActionBar(toolbar);
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);

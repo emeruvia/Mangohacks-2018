@@ -7,15 +7,10 @@
     android:layout_height="match_parent"
     tools:context="any_end_will_do.mangohacks.MainPageActivity">
 
-    <android.support.v7.widget.Toolbar
-        android:id="@+id/my_toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
-        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
-        app:menu="@menu/toolbar_navigation"/>
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
 
     <TextView
         android:id="@+id/message"

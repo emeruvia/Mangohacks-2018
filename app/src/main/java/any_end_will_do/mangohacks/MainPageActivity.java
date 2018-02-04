@@ -52,7 +52,6 @@ public class MainPageActivity extends AppCompatActivity {
     private UserProfile userProfile;
 
 
-
     private BusinessPostRecyclerView businessPostRecyclerView;
     private DashBoardRecyclerView dashBoardRecyclerView;
     private MailMessageRecyclerView mailMessageRecyclerView;
@@ -76,10 +75,9 @@ public class MainPageActivity extends AppCompatActivity {
                 case R.id.navigation_dashboard:
 
 
-
                     mTextMessage.setText(R.string.title_dashboard);
                     for (int i = 0; i < 20; i++) {
-                        dashBoardItem = new DashBoardItem( "Induustry: #" + i,R.drawable.ic_launcher_background);
+                        dashBoardItem = new DashBoardItem("Induustry: #" + i, R.drawable.ic_launcher_background);
                         dashBoardItemList.add(dashBoardItem);
                     }
                     dashBoardRecyclerView = new DashBoardRecyclerView(dashBoardItemList);
@@ -96,8 +94,8 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.user_name);
-                        userProfile = new UserProfile("Car","car@gmail.com","2234 45th st w Houston,TX","123-345-2342");
-                        userProfiles.add(userProfile);
+                    userProfile = new UserProfile("Car", "car@gmail.com", "2234 45th st w Houston,TX", "123-345-2342");
+                    userProfiles.add(userProfile);
 
                     profileRecyclerView = new ProfileRecyclerView(userProfiles);
                     recyclerView.setAdapter(profileRecyclerView);
@@ -173,9 +171,9 @@ public class MainPageActivity extends AppCompatActivity {
 
     }
 
-    public void callIntent(Intent i){
+    public void callIntent(Intent i) {
         startActivity(i);
     }
 
-    }
+}
 

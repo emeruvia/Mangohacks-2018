@@ -1,6 +1,8 @@
 package any_end_will_do.mangohacks.recyclerviews;
 
 import android.content.Context;
+import android.content.Intent;
+import android.support.v7.app.AppCompatCallback;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -14,8 +16,10 @@ import java.util.List;
 
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.R;
+import any_end_will_do.mangohacks.dataObjects.UserProfile;
 
-public class   BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostRecyclerView.BusinessPostAdapterViewHolder> {
+public class BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostRecyclerView.BusinessPostAdapterViewHolder>
+{
 
     private List<BusinessPost> businessPostList;
 
@@ -39,6 +43,7 @@ public class   BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPos
         //get the holder to their respective id
         holder.captionTextView.setText(businessPostList.get(i).getPostCaption());
         holder.userTextView.setText(businessPostList.get(i).getPostUser());
+        holder.profile = businessPostList.get(i).getAuthor();
 //        holder.imageView.setImageResource(businessPostList.get(i).getPostImage());
 
     }
@@ -56,6 +61,7 @@ public class   BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPos
         TextView captionTextView;
         TextView userTextView;
         ImageView imageView;
+        UserProfile profile;
 
 
         public BusinessPostAdapterViewHolder(View view) {
@@ -80,19 +86,21 @@ public class   BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPos
             likeButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //TODO increment like value in person's profile
+                    profile.setLikes(profile.getLikes()+1);
                 }
             });
             profileButton.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //TODO Make intent to show the profile who made the post
+                    Intent intent = new Intent();
+
+
                 }
             });
             shareProfile.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    //TODO Make a pop-up that will share the post with people
+
                 }
             });
 

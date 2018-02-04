@@ -9,6 +9,7 @@ public class UserProfile {
     private String emailAddress;
     private String address;
     private String phoneNumber;
+    private int likes;
 
     public UserProfile(String companyName, String emailAddress, String address, String phoneNumber){
         this.companyName = companyName;
@@ -35,4 +36,13 @@ public class UserProfile {
 
         return companyName;
     }
+
+    public int getLikes() {
+        return likes;
+    }
+
+    public void setLikes(int likes) {
+        this.likes = likes;
+    }
 }
+

@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.app.AppCompatCallback;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -172,6 +173,9 @@ public class MainPageActivity extends AppCompatActivity {
 
     }
 
+    public void callIntent(Intent i){
+        startActivity(i);
+    }
 
     }
-}
+

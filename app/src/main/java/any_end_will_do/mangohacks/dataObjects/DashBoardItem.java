@@ -9,9 +9,9 @@ import android.media.Image;
 
 public class DashBoardItem {
     private String dashBoardTitle;
-    private Drawable dashBoardImage;
+    private int dashBoardImage;
 
-    public DashBoardItem(String dashBoardTitle, Drawable dashBoardImage){
+    public DashBoardItem(String dashBoardTitle, int dashBoardImage){
         this.dashBoardImage = dashBoardImage;
         this.dashBoardTitle = dashBoardTitle;
     }
@@ -20,7 +20,7 @@ public class DashBoardItem {
         return dashBoardTitle;
     }
 
-    public Drawable getDashBoardImage() {
+    public int getDashBoardImage() {
         return dashBoardImage;
     }
 }

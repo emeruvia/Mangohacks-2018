@@ -39,15 +39,16 @@ public class DashBoardRecyclerView extends RecyclerView.Adapter<DashBoardRecycle
 
     @Override
     public void onBindViewHolder(DashBoardRecyclerView.DashBoardRecyclerViewHolder holder, int position) {
-       holder.industryIcon.setImageDrawable(dashBoardItemList.get(position).getDashBoardImage());
+       holder.industryIcon.setImageResource(dashBoardItemList.get(position).getDashBoardImage());
        holder.industryTitle.setText(dashBoardItemList.get(position).getDashBoardTitle());
 
     }
 
     @Override
     public int getItemCount() {
-        return 0;
+        return dashBoardItemList.size();
     }
+
     public class DashBoardRecyclerViewHolder extends RecyclerView.ViewHolder {
         ;
         final TextView industryTitle;

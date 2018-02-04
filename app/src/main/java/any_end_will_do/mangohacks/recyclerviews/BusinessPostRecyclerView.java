@@ -15,7 +15,7 @@ import java.util.List;
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.R;
 
-public class BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostRecyclerView.BusinessPostAdapterViewHolder> {
+public class   BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostRecyclerView.BusinessPostAdapterViewHolder> {
 
     private List<BusinessPost> businessPostList;
 

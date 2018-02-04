@@ -37,7 +37,6 @@ public class ProfileRecyclerView extends RecyclerView.Adapter<ProfileRecyclerVie
 
     @Override
     public void onBindViewHolder(ProfileRecyclerViewHolder holder, int position) {
-            holder.address.setText(userProfile.get(position).getAddress());
             holder.emailAddress.setText(userProfile.get(position).getEmailAddress());
             holder.companyName.setText(userProfile.get(position).getCompanyName());
             holder.phoneNumber.setText(userProfile.get(position).getPhoneNumber());
@@ -52,14 +51,12 @@ public class ProfileRecyclerView extends RecyclerView.Adapter<ProfileRecyclerVie
         final TextView companyName;
         final TextView emailAddress;
         final TextView phoneNumber;
-        final TextView  address;
 
         public ProfileRecyclerViewHolder(View view) {
             super(view);
             companyName = view.findViewById(R.id.user_company);
             emailAddress = view.findViewById(R.id.email_profile);
             phoneNumber = view.findViewById(R.id.phone_textview);
-            address = view.findViewById(R.id.address_textview);
         }
     }
 

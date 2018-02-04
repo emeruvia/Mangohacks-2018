@@ -126,10 +126,8 @@ public class MainPageActivity extends AppCompatActivity {
 
         }
 
-
         return super.onOptionsItemSelected(item);
     }
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

@@ -83,7 +83,7 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_mail:
                     mTextMessage.setText(R.string.title_mail);
-                        mailMessage = new MailMessage("Caption: #" + 1, "Thanks for registering", "Dave's Data Firm: ");
+                        mailMessage = new MailMessage("Caption: #" + 1, "Thanks for registering", "Edgar's Data Firm: ");
                         mailMessageList.add(mailMessage);
 
                     mailMessageRecyclerView = new MailMessageRecyclerView(mailMessageList);
@@ -91,7 +91,7 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.user_name);
-                    userProfile = new UserProfile("Car", "car@gmail.com", "2234 45th st w Houston,TX", "123-345-2342");
+                    userProfile = new UserProfile("Edgar Meruvia", "emeruvia@gmail.com", "2234 45th st w Houston,TX", "123-345-2342");
                     userProfiles.add(userProfile);
 
                     profileRecyclerView = new ProfileRecyclerView(userProfiles);
@@ -147,10 +147,10 @@ public class MainPageActivity extends AppCompatActivity {
         dashBoardItemList.add(new DashBoardItem("Transportation", R.drawable.car));
         dashBoardItemList.add(new DashBoardItem("Technologies", R.drawable.monitor));
 
-        businessPostList.add(new BusinessPost("Word Chart", "Marketing Co.", R.drawable.pic1));
-        businessPostList.add(new BusinessPost("Stress", "Mangohacks", R.drawable.pic2));
+        businessPostList.add(new BusinessPost(" Need Word Chart", "Marketing Co.", R.drawable.pic1));
+        businessPostList.add(new BusinessPost("Feeling Stress", "Mangohacks", R.drawable.pic2));
         businessPostList.add(new BusinessPost("Meeting", "FIU", R.drawable.pic3));
-        businessPostList.add(new BusinessPost("Lady holding computer", "IT Help Co.", R.drawable.pic4));
+        businessPostList.add(new BusinessPost("Need IT help", "IT Help Co.", R.drawable.pic4));
         businessPostList.add(new BusinessPost("Concentrated", "Hospital", R.drawable.pic5));
         businessPostList.add(new BusinessPost("Focus Chart", "Analytics Co.", R.drawable.pic6));
         businessPostList.add(new BusinessPost("Come and see us", "Marketing Co.", R.drawable.pic7));

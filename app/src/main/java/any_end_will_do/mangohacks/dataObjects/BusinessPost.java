@@ -13,7 +13,7 @@ public class BusinessPost {
     private String postCaption;
     private String postUser;
     private int postImageResource;
-
+    private UserProfile author;
     //Class constructor
     public BusinessPost(String postCaption, String postUser, int postImageResource){
         this.postCaption = postCaption;
@@ -30,9 +30,11 @@ public class BusinessPost {
         return postUser;
     }
 
-    public int getPostImage() {
+    public int getPostImageResource() {
         return postImageResource;
     }
 
-
+    public UserProfile getAuthor() {
+        return author;
+    }
 }

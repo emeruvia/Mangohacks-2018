@@ -33,7 +33,7 @@ public class TitleActivity extends AppCompatActivity {
                 Intent CU = new Intent(getApplicationContext(), SignUpActivity.class);
                 startActivity(CU);
             }catch(Exception e){
-
+                e.printStackTrace();
             }
 
         }
@@ -42,7 +42,7 @@ public class TitleActivity extends AppCompatActivity {
                 Intent CU = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(CU);
             }catch(Exception e){
-
+                e.printStackTrace();
             }
 
         }

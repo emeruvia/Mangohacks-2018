@@ -27,5 +27,14 @@ public class TitleActivity extends AppCompatActivity {
             }
 
         }
+        if (v == findViewById(R.id.login)){
+            try{
+                Intent CU = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(CU);
+            }catch(Exception e){
+
+            }
+
+        }
     }
 }

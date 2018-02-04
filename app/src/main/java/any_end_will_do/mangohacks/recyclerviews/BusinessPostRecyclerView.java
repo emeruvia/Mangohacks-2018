@@ -44,7 +44,7 @@ public class BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostR
         holder.captionTextView.setText(businessPostList.get(i).getPostCaption());
         holder.userTextView.setText(businessPostList.get(i).getPostUser());
         holder.profile = businessPostList.get(i).getAuthor();
-//        holder.imageView.setImageResource(businessPostList.get(i).getPostImage());
+        holder.imageView.setImageResource(businessPostList.get(i).getPostImageResource());
 
     }
 
@@ -71,8 +71,8 @@ public class BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostR
             shareProfile = (ImageButton) view.findViewById(R.id.share_post_button);
             profileButton = (ImageButton) view.findViewById(R.id.view_profile_button);
             commentButton = (ImageButton) view.findViewById(R.id.comment_button);
-            captionTextView = view.findViewById(R.id.company_caption);
-            userTextView = view.findViewById(R.id.company_caption);
+            captionTextView = view.findViewById(R.id.caption_textview);
+            userTextView = view.findViewById(R.id.company_user);
             imageView = view.findViewById(R.id.post_image);
 
             //Onclick listener buttons

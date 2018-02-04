@@ -148,19 +148,20 @@ public class MainPageActivity extends AppCompatActivity {
         dashBoardItemList.add(new DashBoardItem("Transportation", R.drawable.car));
         dashBoardItemList.add(new DashBoardItem("Technologies", R.drawable.monitor));
 
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic1));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic2));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic3));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic4));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic5));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic6));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic7));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic8));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic9));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic10));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic11));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic12));
+        businessPostList.add(new BusinessPost("Test", "test user", R.drawable.pic13));
 
-        for (int i = 0; i < 20; i++) {
-
-            businessPost = new BusinessPost("Caption # " + i, "User #: " + i, R.drawable.ic_email_black_24dp);
-            mailMessage = new MailMessage("Caption: #" + i, "This is a test", "Company: #" + i);
-
-
-            businessPostList.add(businessPost);
-            mailMessageList.add(mailMessage);
-
-            Log.i("test", mailMessageList.get(i).getCaption());
-
-        }
 
         /////////////////////////////////////////
 

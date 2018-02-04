@@ -4,6 +4,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:paddingBottom="3dp"
     android:layout_marginBottom="0.5dp">
 
     <LinearLayout
@@ -13,23 +14,24 @@
         android:orientation="vertical">
 
         <TextView
-
-            android:layout_width="wrap_content"
+            android:id="@+id/caption_textview"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textAlignment="center"
-            android:text="@string/caption_cardview"/>
+            android:text="@string/caption_cardview"
+            android:textSize="20sp"/>
 
         <TextView
-            android:id="@+id/company_caption"
-            android:layout_width="wrap_content"
+            android:id="@+id/company_user"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/user_company" />
+            android:text="@string/user_company"
+            android:paddingLeft="5dp"/>
 
         <ImageView
             android:id="@+id/post_image"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_launcher_background"/>
+            android:layout_height="wrap_content"/>
 
         <LinearLayout
             android:layout_width="match_parent"

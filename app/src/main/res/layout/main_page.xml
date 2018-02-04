@@ -6,7 +6,6 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="any_end_will_do.mangohacks.MainPageActivity"
-    android:background="#bad4ff"
     android:alpha="0.8">
 
     <include
@@ -15,7 +14,7 @@
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/idRecyclerView"
-        android:background="#00ffff"
+        android:background="#606060"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:visibility="visible"

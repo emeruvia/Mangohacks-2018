@@ -77,10 +77,7 @@ public class MainPageActivity extends AppCompatActivity {
 
 
                     mTextMessage.setText(R.string.title_dashboard);
-                    for (int i = 0; i < 20; i++) {
-                        dashBoardItem = new DashBoardItem("Induustry: #" + i, R.drawable.ic_launcher_background);
-                        dashBoardItemList.add(dashBoardItem);
-                    }
+
                     dashBoardRecyclerView = new DashBoardRecyclerView(dashBoardItemList);
                     recyclerView.setAdapter(dashBoardRecyclerView);
                     return true;
@@ -141,6 +138,17 @@ public class MainPageActivity extends AppCompatActivity {
 
         /**
          * this is the testing data, the only part that we should change once we have the database connection**/
+
+        dashBoardItemList.add(new DashBoardItem("Contacts", R.drawable.phone));
+        dashBoardItemList.add(new DashBoardItem("Notes", R.drawable.notepad));
+        dashBoardItemList.add(new DashBoardItem("Resources", R.drawable.book));
+        dashBoardItemList.add(new DashBoardItem("Schedule", R.drawable.stopwatch));
+        dashBoardItemList.add(new DashBoardItem("Search", R.drawable.search));
+        dashBoardItemList.add(new DashBoardItem("Travel", R.drawable.aeroplane));
+        dashBoardItemList.add(new DashBoardItem("Transportation", R.drawable.car));
+        dashBoardItemList.add(new DashBoardItem("Technologies", R.drawable.monitor));
+
+
         for (int i = 0; i < 20; i++) {
 
             businessPost = new BusinessPost("Caption # " + i, "User #: " + i, R.drawable.ic_email_black_24dp);

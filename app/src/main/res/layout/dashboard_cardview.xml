@@ -16,6 +16,7 @@
         <TextView
             android:id="@+id/industry_title"
             android:padding="15dp"
+            android:textColor="@color/colorAccent"
             android:textSize="25sp"
             android:layout_width="0dp"
             android:layout_height="wrap_content"

@@ -75,7 +75,6 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
 
-
                     mTextMessage.setText(R.string.title_dashboard);
 
                     dashBoardRecyclerView = new DashBoardRecyclerView(dashBoardItemList);
@@ -83,15 +82,14 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_mail:
                     mTextMessage.setText(R.string.title_mail);
-                        mailMessage = new MailMessage("Caption: #" + 1, "Thanks for registering", "Edgar's Data Firm: ");
-                        mailMessageList.add(mailMessage);
 
                     mailMessageRecyclerView = new MailMessageRecyclerView(mailMessageList);
                     recyclerView.setAdapter(mailMessageRecyclerView);
                     return true;
                 case R.id.navigation_profile:
                     mTextMessage.setText(R.string.user_name);
-                    userProfile = new UserProfile("Edgar Meruvia", "emeruvia@gmail.com", "2234 45th st w Houston,TX", "123-345-2342");
+
+                    userProfile = new UserProfile("Name: Edgar Meruvia", "email: emeruvia@gmail.com", "2366 Crystal Drive", "Phone: 239-245-2205");
                     userProfiles.add(userProfile);
 
                     profileRecyclerView = new ProfileRecyclerView(userProfiles);
@@ -161,7 +159,8 @@ public class MainPageActivity extends AppCompatActivity {
         businessPostList.add(new BusinessPost("Interns needed", "Apple", R.drawable.pic12));
         businessPostList.add(new BusinessPost("Push your company to the future", "Data Firm", R.drawable.pic13));
 
-
+        mailMessage = new MailMessage("Welcome to MBP!!!", "Thanks for registering", "Edgar's Data Firm: \n Civilized Software Engineering");
+        mailMessageList.add(mailMessage);
         /////////////////////////////////////////
 
 

@@ -18,6 +18,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/user_name"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"
             android:visibility="gone" />
 
@@ -26,6 +27,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/user_company"
+            android:textColor="@color/colorPrimaryDark"
+
             android:textSize="20sp"/>
 
         <TextView
@@ -33,6 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/email"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"/>
 
         <TextView
@@ -40,6 +44,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/phone_number"
+            android:textColor="@color/colorPrimaryDark"
             android:textSize="20sp"/>
 
     </LinearLayout>

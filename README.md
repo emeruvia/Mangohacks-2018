@@ -9,4 +9,10 @@ The project is a system in which companies can upload content, comment, and give
 ![alt text](https://github.com/emeruvia/Mangohacks-2018/blob/master/main-page.png)
 ![alt text](https://github.com/emeruvia/Mangohacks-2018/blob/master/categories-page.png)
 ## Technologies
-We used Android studio as our main development tool and firebase for the login and database.
+We used Android studio as our main development tool and firebase for the login and database.<br/>
+We used concepts such as:<br/>
+* RecyclerViews
+* Cardviews
+* OnClickListeners
+* Custom Layouts
+* Tab activities

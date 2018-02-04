@@ -35,7 +35,7 @@ public class MailMessageRecyclerView extends RecyclerView.Adapter<MailMessageRec
         boolean shouldAttachToParentImmediately = false;
 
         View view = inflater.inflate(layoutIdForListItem, parent, shouldAttachToParentImmediately);
-        return new MailMessageRecyclerView.MailMessageRecyclerViewHolder(view);
+        return new MailMessageRecyclerViewHolder(view);
     }
 
     @Override
@@ -48,7 +48,7 @@ public class MailMessageRecyclerView extends RecyclerView.Adapter<MailMessageRec
 
     @Override
     public int getItemCount() {
-        return 0;
+        return mailMessageList.size();
     }
     public class MailMessageRecyclerViewHolder extends RecyclerView.ViewHolder {
         ;

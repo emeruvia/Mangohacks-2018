@@ -1,5 +1,6 @@
 package any_end_will_do.mangohacks;
 
+import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -10,6 +11,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -18,9 +20,11 @@ import java.util.List;
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.dataObjects.DashBoardItem;
 import any_end_will_do.mangohacks.dataObjects.MailMessage;
+import any_end_will_do.mangohacks.dataObjects.UserProfile;
 import any_end_will_do.mangohacks.recyclerviews.BusinessPostRecyclerView;
 import any_end_will_do.mangohacks.recyclerviews.DashBoardRecyclerView;
 import any_end_will_do.mangohacks.recyclerviews.MailMessageRecyclerView;
+import any_end_will_do.mangohacks.recyclerviews.ProfileRecyclerView;
 
 
 public class MainPageActivity extends AppCompatActivity {
@@ -28,18 +32,28 @@ public class MainPageActivity extends AppCompatActivity {
     private TextView mTextMessage;
     private RecyclerView recyclerView;
 
+    private Context thisContext;
+
+    {
+        thisContext = this;
+    }
+
     private List<BusinessPost> businessPostList = new ArrayList<>();
     private List<DashBoardItem> dashBoardItemList = new ArrayList<>();
     private List<MailMessage> mailMessageList = new ArrayList<>();
+    private List<UserProfile> userProfiles = new ArrayList<>();
 
     private BusinessPost businessPost;
     private DashBoardItem dashBoardItem;
     private MailMessage mailMessage;
+    private UserProfile userProfile;
+
 
 
     private BusinessPostRecyclerView businessPostRecyclerView;
     private DashBoardRecyclerView dashBoardRecyclerView;
     private MailMessageRecyclerView mailMessageRecyclerView;
+    private ProfileRecyclerView profileRecyclerView;
 
     private android.support.v7.widget.Toolbar toolbar;
 
@@ -59,20 +73,32 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_dashboard:
 
-                    dashBoardRecyclerView = new DashBoardRecyclerView(dashBoardItemList);
-                    recyclerView.setAdapter(dashBoardRecyclerView);
+
 
                     mTextMessage.setText(R.string.title_dashboard);
+                    for (int i = 0; i < 20; i++) {
+                        dashBoardItem = new DashBoardItem( "Induustry: #" + i,R.drawable.ic_launcher_background);
+                        dashBoardItemList.add(dashBoardItem);
+                    }
+                    dashBoardRecyclerView = new DashBoardRecyclerView(dashBoardItemList);
+                    recyclerView.setAdapter(dashBoardRecyclerView);
                     return true;
                 case R.id.navigation_mail:
-
+                    mTextMessage.setText(R.string.title_mail);
+                    for (int i = 0; i < 20; i++) {
+                        mailMessage = new MailMessage("Caption: #" + i, "This is a test", "Company: #" + i);
+                        mailMessageList.add(mailMessage);
+                    }
                     mailMessageRecyclerView = new MailMessageRecyclerView(mailMessageList);
                     recyclerView.setAdapter(mailMessageRecyclerView);
-
-                    mTextMessage.setText(R.string.title_mail);
                     return true;
                 case R.id.navigation_profile:
-                    mTextMessage.setText(R.string.title_profile);
+                    mTextMessage.setText(R.string.user_name);
+                        userProfile = new UserProfile("Car","car@gmail.com","2234 45th st w Houston,TX","123-345-2342");
+                        userProfiles.add(userProfile);
+
+                    profileRecyclerView = new ProfileRecyclerView(userProfiles);
+                    recyclerView.setAdapter(profileRecyclerView);
                     return true;
             }
             return false;
@@ -117,7 +143,7 @@ public class MainPageActivity extends AppCompatActivity {
          * this is the testing data, the only part that we should change once we have the database connection**/
         for (int i = 0; i < 20; i++) {
 
-            businessPost = new BusinessPost("Caption # " + i, "User #: " + i, i);
+            businessPost = new BusinessPost("Caption # " + i, "User #: " + i, R.drawable.ic_email_black_24dp);
             mailMessage = new MailMessage("Caption: #" + i, "This is a test", "Company: #" + i);
 
 
@@ -134,12 +160,15 @@ public class MainPageActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.idRecyclerView);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
+        businessPostRecyclerView = new BusinessPostRecyclerView(businessPostList);
+        recyclerView.setAdapter(businessPostRecyclerView);
 
 
 
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+
     }
 
 

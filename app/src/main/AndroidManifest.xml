@@ -32,7 +32,7 @@
             android:name=".MainPageActivity"
             android:label="@string/title_activity_main2"
             android:screenOrientation="portrait"/>
-        <activity android:name=".recyclerviews.PostRecyclerView"></activity>
+        <activity android:name=".recyclerviews.BusinessPostRecyclerView"></activity>
 
     </application>
 

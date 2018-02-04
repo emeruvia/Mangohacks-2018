@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -14,11 +15,11 @@ import java.util.List;
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 import any_end_will_do.mangohacks.R;
 
-public class PostRecyclerView extends RecyclerView.Adapter<PostRecyclerView.BusinessPostAdapterViewHolder> {
+public class BusinessPostRecyclerView extends RecyclerView.Adapter<BusinessPostRecyclerView.BusinessPostAdapterViewHolder> {
 
     private List<BusinessPost> businessPostList;
 
-    public PostRecyclerView(List<BusinessPost> businessPostList) {
+    public BusinessPostRecyclerView(List<BusinessPost> businessPostList) {
         this.businessPostList = businessPostList;
     }
 
@@ -34,11 +35,11 @@ public class PostRecyclerView extends RecyclerView.Adapter<PostRecyclerView.Busi
     }
 
     @Override
-    public void onBindViewHolder(PostRecyclerView.BusinessPostAdapterViewHolder holder, int i) {
+    public void onBindViewHolder(BusinessPostRecyclerView.BusinessPostAdapterViewHolder holder, int i) {
         //get the holder to their respective id
         holder.captionTextView.setText(businessPostList.get(i).getPostCaption());
-        holder.captionTextView.setText(businessPostList.get(i).getPostUser());
-        holder.imageView.setImageResource(businessPostList.get(i).getPostImage());
+        holder.userTextView.setText(businessPostList.get(i).getPostUser());
+//        holder.imageView.setImageResource(businessPostList.get(i).getPostImage());
 
     }
 
@@ -48,22 +49,22 @@ public class PostRecyclerView extends RecyclerView.Adapter<PostRecyclerView.Busi
     }
 
     public class BusinessPostAdapterViewHolder extends RecyclerView.ViewHolder {
-        final Button likeButton;
-        final Button shareProfile;
-        final Button profileButton;
-        final Button commentButton;
-        final TextView captionTextView;
-        final TextView userTextView;
-        final ImageView imageView;
+        ImageButton likeButton;
+        ImageButton shareProfile;
+        ImageButton profileButton;
+        ImageButton commentButton;
+        TextView captionTextView;
+        TextView userTextView;
+        ImageView imageView;
 
 
         public BusinessPostAdapterViewHolder(View view) {
             super(view);
 
-            likeButton = (Button) view.findViewById(R.id.like_button);
-            shareProfile = (Button) view.findViewById(R.id.share_post_button);
-            profileButton = (Button) view.findViewById(R.id.view_profile_button);
-            commentButton = (Button) view.findViewById(R.id.comment_button);
+            likeButton = (ImageButton) view.findViewById(R.id.like_button);
+            shareProfile = (ImageButton) view.findViewById(R.id.share_post_button);
+            profileButton = (ImageButton) view.findViewById(R.id.view_profile_button);
+            commentButton = (ImageButton) view.findViewById(R.id.comment_button);
             captionTextView = view.findViewById(R.id.company_caption);
             userTextView = view.findViewById(R.id.company_caption);
             imageView = view.findViewById(R.id.post_image);

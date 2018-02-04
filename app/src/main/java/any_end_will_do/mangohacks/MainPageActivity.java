@@ -1,6 +1,7 @@
 package any_end_will_do.mangohacks;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
@@ -12,6 +13,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.Button;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -56,7 +58,6 @@ public class MainPageActivity extends AppCompatActivity {
     private ProfileRecyclerView profileRecyclerView;
 
     private android.support.v7.widget.Toolbar toolbar;
-
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
             = new BottomNavigationView.OnNavigationItemSelectedListener() {
@@ -134,6 +135,7 @@ public class MainPageActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
         setContentView(R.layout.main_page);
         toolbar = findViewById(R.id.toolbar);
         toolbar.setTitle(R.string.toolbar_title);
@@ -164,7 +166,6 @@ public class MainPageActivity extends AppCompatActivity {
         recyclerView.setAdapter(businessPostRecyclerView);
 
 
-
         mTextMessage = (TextView) findViewById(R.id.message);
         BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
@@ -172,4 +173,5 @@ public class MainPageActivity extends AppCompatActivity {
     }
 
 
+    }
 }

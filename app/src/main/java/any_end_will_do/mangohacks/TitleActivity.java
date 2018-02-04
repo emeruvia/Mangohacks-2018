@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 
@@ -23,4 +24,26 @@ public class TitleActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    public void signUpButton(View v){
+        Button button = (Button) v;
+
+        if (v == findViewById(R.id.sign_up)){
+            try{
+                Intent CU = new Intent(getApplicationContext(), SignUpActivity.class);
+                startActivity(CU);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+        }
+        if (v == findViewById(R.id.login)){
+            try{
+                Intent CU = new Intent(getApplicationContext(), LoginActivity.class);
+                startActivity(CU);
+            }catch(Exception e){
+                e.printStackTrace();
+            }
+
+        }
+    }
 }

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="colorPrimary">#353535</color> <!--Probably the top bar-->
-    <color name="colorPrimaryDark">#303F9F</color> <!--Probably the navigation bar-->
+    <color name="colorPrimaryDark">#080808</color> <!--Probably the navigation bar-->
     <color name="colorAccent">#FF4081</color> <!--what is this?-->
 </resources>

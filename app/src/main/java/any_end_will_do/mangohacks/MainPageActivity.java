@@ -83,10 +83,9 @@ public class MainPageActivity extends AppCompatActivity {
                     return true;
                 case R.id.navigation_mail:
                     mTextMessage.setText(R.string.title_mail);
-                    for (int i = 0; i < 20; i++) {
-                        mailMessage = new MailMessage("Caption: #" + i, "This is a test", "Company: #" + i);
+                        mailMessage = new MailMessage("Caption: #" + 1, "Thanks for registering", "Dave's Data Firm: ");
                         mailMessageList.add(mailMessage);
-                    }
+
                     mailMessageRecyclerView = new MailMessageRecyclerView(mailMessageList);
                     recyclerView.setAdapter(mailMessageRecyclerView);
                     return true;

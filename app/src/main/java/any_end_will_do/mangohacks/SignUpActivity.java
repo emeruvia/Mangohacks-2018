@@ -18,10 +18,15 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+
+import any_end_will_do.mangohacks.dataBase.Users;
 
 public class SignUpActivity extends AppCompatActivity {
 
     private FirebaseAuth fireAuth;
+    private DatabaseReference data;
 
     private TextView email;
     private TextView password;
@@ -40,6 +45,7 @@ public class SignUpActivity extends AppCompatActivity {
         progress = new ProgressDialog(this);
 
         fireAuth = FirebaseAuth.getInstance();
+        data = FirebaseDatabase.getInstance().getReference(); //Dont pass any path if you want root of the tree
 
         email = findViewById(R.id.email_edit_textview);
         password = findViewById(R.id.password_edit_textview);
@@ -60,19 +66,19 @@ public class SignUpActivity extends AppCompatActivity {
             }
         });
 
-
-
     }
 
 
 
     public void register(){
-       String e  = email.getText().toString().trim();
-       String p = password.getText().toString().trim();
-       String n = name.getText().toString();
-       String in = industry.getText().toString();
-       String co = company.getText().toString();
-       String pho = phone.getText().toString();
+       final String e  = email.getText().toString().trim();
+       final String p = password.getText().toString().trim();
+       final String n = name.getText().toString();
+       final String in = industry.getText().toString();
+       final String co = company.getText().toString();
+       final String pho = phone.getText().toString();
+
+
 
        if(TextUtils.isEmpty(e)){
            Toast.makeText(this, "Please enter email", Toast.LENGTH_SHORT).show();
@@ -84,6 +90,9 @@ public class SignUpActivity extends AppCompatActivity {
            return;
        }
 
+
+
+
         progress.setMessage("Registering User...");
         progress.show();
 
@@ -93,6 +102,10 @@ public class SignUpActivity extends AppCompatActivity {
                     public void onComplete(@NonNull Task<AuthResult> task) {
                         if (task.isSuccessful()) {
                             // Sign in success, update UI with the signed-in user's information
+                            Users newuser = new Users(e, n, in, co, pho);
+                            String emalu [] = e.split("@");
+                            data.child("users").child(emalu[0]).setValue(newuser);
+
                             Toast.makeText(SignUpActivity.this, "Registration success", Toast.LENGTH_SHORT).show();
                             progress.hide();
 

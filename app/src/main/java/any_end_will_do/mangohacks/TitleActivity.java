@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+import any_end_will_do.mangohacks.dataBase.dashCards;
 import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 
 public class TitleActivity extends AppCompatActivity {
@@ -15,7 +16,7 @@ public class TitleActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
+        dashCards dash = new dashCards("paper", 1);
 
     }
 

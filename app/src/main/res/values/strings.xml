@@ -1,3 +1,50 @@
 <resources>
     <string name="app_name">Mangohacks</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="logo">Logo</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+
+    <!--Sign up strings -->
+    <string name="email">email</string>
+    <string name="password">password</string>
+    <string name="person_name">name</string>
+    <string name="industry_type">Industry type</string>
+    <string name="phone_number">Phone</string>
+    <string name="company_name">Company</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="optional_string">Optional:</string>
+    <string name="required_string">Required:</string>
+
+    <!--Main page activity bottom toolbar navigation-->
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_mail">Mail</string>
+    <string name="title_profile">Profile</string>
+    <string name="title_notifications" />
+    <string name="toolbar_title">MBP</string>
+    <string name="toolbar_search">Search</string>
+
+    <!--Home cardview-->
+    <string name="caption_cardview">caption</string>
+    <string name="user_company">user/company</string>
+    <string name="email_string">This is the email string...</string>
+    <string name="title_activity_business_post_adapter">BusinessPostAdapter</string>
+
+    <!--Profile strings-->
+    <string name="user_name">Name: </string>
+    <string name="user_address">Address: </string>
+
 </resources>

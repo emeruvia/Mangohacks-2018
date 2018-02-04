@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "844215613827",
+    "firebase_url": "https://mangohacks-abb68.firebaseio.com",
+    "project_id": "mangohacks-abb68",
+    "storage_bucket": "mangohacks-abb68.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:844215613827:android:8db38625dc673d35",
+        "android_client_info": {
+          "package_name": "any_end_will_do.mangohacks"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "844215613827-ll6o4gdns5v61flj3la8d9jh383plj90.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "any_end_will_do.mangohacks",
+            "certificate_hash": "c4b00c1861a4b97027971864f2f90c6ba8b8fc1f"
+          }
+        },
+        {
+          "client_id": "844215613827-52r0ppgec2ak1sf59ahllua1kvd27av7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDqglOKnuzXtYGZmcWqVYThw5gRmcWKeaQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "844215613827-52r0ppgec2ak1sf59ahllua1kvd27av7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

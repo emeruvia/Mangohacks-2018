@@ -2,6 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://C:\Users\jeffr\Desktop\Mangohacks-2018\Mangohacks.iml" filepath="C:\Users\jeffr\Desktop\Mangohacks-2018\Mangohacks.iml" />
+      <module fileurl="file://C:\Users\Andre\Documents\GitHub\Mangohacks-2018\Mangohacks.iml" filepath="C:\Users\Andre\Documents\GitHub\Mangohacks-2018\Mangohacks.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Mangohacks-2018.iml" filepath="$PROJECT_DIR$/.idea/Mangohacks-2018.iml" />
+      <module fileurl="file://C:\Users\EMG\Desktop\Mangohacks\Mangohacks-2018.iml" filepath="C:\Users\EMG\Desktop\Mangohacks\Mangohacks-2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mangohacks.iml" filepath="$PROJECT_DIR$/Mangohacks.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>

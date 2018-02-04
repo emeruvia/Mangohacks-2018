@@ -19,7 +19,7 @@ public class BusinessPostManager {
         //declare array
         businessPostList = new ArrayList<>();
 
-        PostRecyclerView recyclerView = new PostRecyclerView(businessPostList);
+       // PostRecyclerView recyclerView = new PostRecyclerView(businessPostList);
 
     }
 

@@ -104,11 +104,11 @@
 
         <Button
             android:id="@+id/signup_button"
-            android:layout_below="@id/optional_layout"
-            android:layout_centerHorizontal="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/sign_up"/>
+            android:layout_below="@id/optional_layout"
+            android:layout_centerHorizontal="true"
+            android:text="@string/sign_up" />
 
 
     </RelativeLayout>

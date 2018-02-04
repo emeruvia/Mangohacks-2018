@@ -26,7 +26,7 @@
     <string name="sign_up">Sign Up</string>
     <string name="optional_string">Optional:</string>
     <string name="required_string">Required:</string>
-  
+
     <!--Main page activity bottom toolbar navigation-->
     <string name="title_activity_main2">Main2Activity</string>
     <string name="title_home">Home</string>
@@ -34,6 +34,17 @@
     <string name="title_mail">Mail</string>
     <string name="title_profile">Profile</string>
     <string name="title_notifications" />
+    <string name="toolbar_title">HBP</string>
+    <string name="toolbar_search">Search</string>
 
+    <!--Home cardview-->
+    <string name="caption_cardview">caption</string>
+    <string name="user_company">user/company</string>
+    <string name="email_string">This is the email string...</string>
+    <string name="title_activity_business_post_adapter">BusinessPostAdapter</string>
+
+    <!--Profile strings-->
+    <string name="user_name">Name: </string>
+    <string name="user_address">Addres: </string>
 
 </resources>

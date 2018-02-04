@@ -6,14 +6,23 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class TitleActivity extends AppCompatActivity {
+import any_end_will_do.mangohacks.dataObjects.BusinessPost;
 
+public class TitleActivity extends AppCompatActivity {
+        static BusinessPost businessPosts;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+
     }
 
+    public void testingClick(View view) {
+        Intent intent = new Intent(this, MainPageActivity.class);
+        startActivity(intent);
+    }
 
     public void signUpButton(View v){
         Button button = (Button) v;

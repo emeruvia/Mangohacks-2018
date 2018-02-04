@@ -4,17 +4,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="any_end_will_do.mangohacks.TitleActivity">
-
-<TextView
-    android:id="@+id/title"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_alignParentTop="true"
-    android:layout_centerHorizontal="true"
-    android:layout_marginTop="157dp"
-    android:text="MBP"
-    android:textSize="48sp" />
+    tools:context="any_end_will_do.mangohacks.TitleActivity"
+    android:background="@drawable/homescreen_backgroundimage"
+    >
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:scaleX=".8"
+        android:scaleY=".8"
+        android:padding="20dp"
+        android:src="@drawable/homepagelogo"
+        />
 
     <Button
         android:id="@+id/login"
@@ -22,21 +24,25 @@
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginBottom="120dp"
-        android:layout_marginEnd="70dp"
         android:onClick="signUpButton"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="80dp"
+        android:background="#F5F5F5"
+        android:textColor="#353535"
+        android:alpha="0.7"
         android:text="login" />
 
     <Button
         android:id="@+id/sign_up"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
-        android:layout_alignBaseline="@+id/login"
+        android:onClick="testingClick"
         android:layout_alignBottom="@+id/login"
-        android:layout_marginEnd="68dp"
-        android:layout_toStartOf="@+id/login"
         android:onClick="signUpButton"
+        android:layout_marginLeft="80dp"
+        android:background="#F5F5F5"
+        android:textColor="#353535"
+        android:alpha="0.7"
         android:text="sign-up" />
 
 

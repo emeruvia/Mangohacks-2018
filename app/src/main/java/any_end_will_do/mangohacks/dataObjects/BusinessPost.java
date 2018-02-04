@@ -15,8 +15,7 @@ public class BusinessPost {
     private int postImageResource;
 
     //Class constructor
-    public BusinessPost(String postCaption, String postUser, int postImageResource, Button likeButton,
-                        Button commentButton, Button shareButton, Button profileButton){
+    public BusinessPost(String postCaption, String postUser, int postImageResource){
         this.postCaption = postCaption;
         this.postUser = postUser;
         this.postImageResource = postImageResource;

@@ -33,8 +33,7 @@
     <string name="title_dashboard">Dashboard</string>
     <string name="title_mail">Mail</string>
     <string name="title_profile">Profile</string>
-    <string name="title_notifications" />
-    <string name="toolbar_title">HBP</string>
+    <string name="toolbar_title">MBP</string>
     <string name="toolbar_search">Search</string>
 
     <!--Home cardview-->

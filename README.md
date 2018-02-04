@@ -1,5 +1,5 @@
 # Mangohacks-2018 
-## Project
+## JP Morgan Challenge Project
 We choose to work on the JP Morgan Challenge<br>
 Project done for MangoHacks 2018, held at FIU from March 2nd to March 4th. It was a 36 hour event.
 ## Project-Idea

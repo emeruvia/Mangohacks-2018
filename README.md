@@ -17,3 +17,8 @@ We used concepts such as:<br/>
 * OnClickListeners
 * Custom Layouts
 * Tab activities
+## Update
+We ended up winning 1st place for our selected sponsor challenge! <br/>
+Couldn't be happier with the results!
+![alt text](https://github.com/emeruvia/Mangohacks-2018/blob/master/demo%20presentation.png)
+
